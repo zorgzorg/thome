@@ -1,0 +1,54 @@
+<div class="row">
+    {{idCourse}}
+        <div class="col-sm-12">
+    <div class="form-container">
+        <form class="form-edit" method="post" action="edit.html">
+            <div class="form-group">
+                <label class="col-sm-3" for="title">Title</label>
+                <input type="text" name="title" id="title" required autofocus/>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="description">Description</label>
+                <textarea name="description" id="description" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="date">Date</label>
+                <input type="date" name="date" id="date" required/>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3" for="duration">Duration</label>
+                <input class="duration" type="number" pattern="^[0-9]+$" name="duration" id="duration" required/>
+            </div>
+               <div class="form-group">
+                   <label class="col-3" for="authors">Authors</label>
+                   <div class="row">
+                       <div class="col-xs-2">
+                           <select size="3" name="authors" id="authors" multiple>
+                               <option value="s2">Johnson</option>
+                               <option selected value="s4">Smith</option>
+                               <option value="s5">Williams</option>
+                           </select>
+                       </div>
+                       <div class="col-2">
+                           <div class="form-group">
+                               <input type="submit" class="small-button" value=">"/>
+                               <input type="submit" class="small-button" value="<"/>
+                           </div>
+                       </div>
+                       <div class="col-2">
+                           <select size="3" name="authors_selected" id="authors_selected" multiple>
+                               <option value="s1">Brown</option>
+                               <option value="s3">Miller</option>
+                           </select>
+                       </div>
+                   </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3"><span>&nbsp;</span></label>
+                <input class="col-sm-4" type="submit" value="Save" name="submit"/>
+                <input class="col-sm-4" type="submit" value="Cancel" name="submit"/>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
